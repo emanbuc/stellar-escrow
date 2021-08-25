@@ -12,7 +12,7 @@ const start = async () => {
       {
         type: 'list',
         name: 'whois',
-        message: '¿Eres Alice o Bob?',
+        message: 'Sei Alice o Bob?',
         choices: ['Alice', 'Bob']
       }
     ];
@@ -24,26 +24,26 @@ const start = async () => {
         {
           type: 'list',
           name: 'action',
-          message: '¿Que quieres hacer?',
+          message: 'Scegli una operazione dal menu',
           choices: [
             {
-              name: 'Crear el escrow',
+              name: 'Crea account escrow',
               value: 'createEscrow'
             },
             {
-              name: 'Añadir el mecanismo multifirma',
+              name: 'Configura firma congiunta su conto escrow',
               value: 'setEscrowMultisig'
             },
             {
-              name: 'Fondear el escrow',
+              name: 'Trasferisci fondi verso accont escrow',
               value: 'fundEscrow'
             },
             {
-              name: 'Liberar los fondos',
+              name: 'Prepara transazione per sblocco dei fondi',
               value: 'releaseFunds'
             },
             {
-              name: 'Fimar la liberación de fondos',
+              name: 'Firma lo sblocco dei fondi',
               value: 'signFundsRelease'
             }
           ]
@@ -74,10 +74,10 @@ const start = async () => {
         {
           type: 'list',
           name: 'action',
-          message: '¿Que quieres hacer?',
+          message: 'Scegli una operazione dal menu',
           choices: [
             {
-              name: 'Retirar fondos',
+              name: 'Controfirma transazione sblocco fondi ed trasferisci soldi',
               value: 'withdraw'
             }
           ]

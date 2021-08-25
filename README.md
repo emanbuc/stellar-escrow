@@ -1,5 +1,7 @@
 # Stellar Escrow Smart Contract
 
+## Setup
+
 This is an example of how to create a smart contract in Stellar Network, just follow the instructions below:
 
 1. Copy .env.example into a .env
@@ -9,16 +11,22 @@ This is an example of how to create a smart contract in Stellar Network, just fo
 
 At this point, you can run `npm start` to interact with the smart contract.
 
-To show how it works, run the scripts in the following order:
+## How To use
 
-## Alice
-1. Crear el escrow
-2. Añadir el mecanismo multifirma
-3. Fondear el escrow
-4. Liberar los fondos
-5. Firmar la liberacion de fondos
+To show how it works, run the scripts in the following order and after each operation check account status and transactions on https://stellar.expert/explorer
 
-## Bob
-1. Retirar fondos
+### Alice
 
-## Cheers!
+1. Create the escrow account
+2. Setup multisignature 
+3. Punt money into escrow
+4. Prepare trasaction to pay Bob
+5. Sign trasaction to unlock money into the escrow.
+
+### Bob
+
+1. Sign transaction ad get money
+
+## Credits
+
+Based on [https://github.com/ernestognw/stellar-escrow](https://github.com/ernestognw/stellar-escrow) repository and video tutorial [https://www.youtube.com/watch?v=75GDzoslesE](https://www.youtube.com/watch?v=75GDzoslesE) by Ernesto Garcia.
